@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-You can use and, or and not to create more complex filter clauses.
+**You can use and, or and not to create more complex filter clauses.**
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People?$filter=not(contains(FirstName,'Q')) and (AddressInfo/any(ai:ai/City/Region eq 'WA') or AddressInfo/any(ai:ai/City/Region eq 'ID'))
@@ -11,7 +11,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK
