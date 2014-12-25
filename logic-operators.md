@@ -1,6 +1,6 @@
 **Categories**: Filtering collections
 
-**You can use and, or and not to create more complex filter clauses.**
+**Description**: You can use and, or and not to create more complex filter clauses.
 
 **Request**
 

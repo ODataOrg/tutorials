@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-The $filter system query option can be used to filter any collection of resources. Note that the response to a filtered collection is a collection of the same type, regardless of the number of matched resources.
+**Description**: The $filter system query option can be used to filter any collection of resources. Note that the response to a filtered collection is a collection of the same type, regardless of the number of matched resources.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People?$filter=FirstName eq 'Vincent'
@@ -12,7 +12,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

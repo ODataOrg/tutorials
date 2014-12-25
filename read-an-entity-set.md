@@ -1,8 +1,8 @@
-Categories: Basic Requests
+**Categories**: Basic Requests
 
-One of the most common responses from a REST API is a collection of resources. In this case we asked for the People collection. For each response, the OData service writes a self-described response (another REST principle) by annotating the response with a context URL. This context URL tells the service that the contents of the response are a collection of things in the People entity set. The @odata.nextLink annotation is present because the server opted to split the result set across multiple pages. The client can also drive paging using $top and $skip, but server-side paging is a mitigation against DoS attacks. The value property contains the bulk of the response. Note that @odata.id and @odata.editLink should generally not be present in the payload unless they deviate from convention. In this case it appears that there is a bug in our sample service. Pretend those properties aren't there.
+**Description**: One of the most common responses from a REST API is a collection of resources. In this case we asked for the People collection. For each response, the OData service writes a self-described response (another REST principle) by annotating the response with a context URL. This context URL tells the service that the contents of the response are a collection of things in the People entity set. The @odata.nextLink annotation is present because the server opted to split the result set across multiple pages. The client can also drive paging using $top and $skip, but server-side paging is a mitigation against DoS attacks. The value property contains the bulk of the response. Note that @odata.id and @odata.editLink should generally not be present in the payload unless they deviate from convention. In this case it appears that there is a bug in our sample service. Pretend those properties aren't there.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People
@@ -12,7 +12,7 @@ OData-MaxVersion: 4.0
 
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

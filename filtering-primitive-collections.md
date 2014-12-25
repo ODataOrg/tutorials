@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-You can filter any type of collection in OData services. When referring to a member of the collection, you can use $it as reference to the member itself.
+**Description**: You can filter any type of collection in OData services. When referring to a member of the collection, you can use $it as reference to the member itself.
 
-Request
+**Request**
 
 ```
 GET 
@@ -11,7 +11,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

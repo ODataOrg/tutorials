@@ -1,8 +1,8 @@
-Categories: Basic Requests
+**Categories**: Basic Requests
 
-To get a particular entity from a collection, append a key segment. By default, key segments in OData services are bounded by parens because they may be composite keys, e.g., OrderLine(OrderId=1,LineNumber=1) or alternate keys, e.g., Person(SSN='000-00-0000') and Person(2115) both address the same resource. Some OData services use normal URL segments for key segments, e.g., Orders/1. This is not recommended because of the scenarios mentioned above.
+**Description**: To get a particular entity from a collection, append a key segment. By default, key segments in OData services are bounded by parens because they may be composite keys, e.g., OrderLine(OrderId=1,LineNumber=1) or alternate keys, e.g., Person(SSN='000-00-0000') and Person(2115) both address the same resource. Some OData services use normal URL segments for key segments, e.g., Orders/1. This is not recommended because of the scenarios mentioned above.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People('russellwhyte')
@@ -12,7 +12,7 @@ OData-MaxVersion: 4.0
 
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

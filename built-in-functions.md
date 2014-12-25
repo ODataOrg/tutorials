@@ -1,8 +1,9 @@
-Categories: Filtering collections
 
-Another way of filtering items is to use a type cast segment. In this case we are looking for all of the flights that are part of Russell's trip. A type cast also allows us to append additional path segments that are properties of the subtype.
+**Categories**: Filtering collections
 
-Request
+**Description**: Another way of filtering items is to use a type cast segment. In this case we are looking for all of the flights that are part of Russell's trip. A type cast also allows us to append additional path segments that are properties of the subtype.
+
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People('russellwhyte')/Trips(0)/PlanItems/Microsoft.OData.SampleService.Models.TripPin.Flight
@@ -11,7 +12,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

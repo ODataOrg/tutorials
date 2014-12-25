@@ -1,8 +1,8 @@
-Categories: Basic Requests
+**Categories**: Basic Requests
 
-To navigate the resource graph, keep appending segments representing valid property names as defined in $metadata or in a full metadata response (see query x). In this case we have started from the service root, navigated to the entity set People, navigated to the resource keyed 'russellwhyte', navigated to the Friends property, navigated to the resource keyed 'scottketchum', and finally navigated to the AddressInfo property. Note that the @odata.context URL self-describes the payload.
+**Description**: To navigate the resource graph, keep appending segments representing valid property names as defined in $metadata or in a full metadata response (see query x). In this case we have started from the service root, navigated to the entity set People, navigated to the resource keyed 'russellwhyte', navigated to the Friends property, navigated to the resource keyed 'scottketchum', and finally navigated to the AddressInfo property. Note that the @odata.context URL self-describes the payload.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People('russellwhyte')/Friends('scottketchum')/AddressInfo
@@ -12,7 +12,7 @@ OData-MaxVersion: 4.0
 
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

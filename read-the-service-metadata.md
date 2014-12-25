@@ -1,8 +1,8 @@
-Categories: Basic Requests
+**Categories**: Basic Requests
 
-$metadata is an endpoint in OData services that contains a machine-readable description of the service model including type schemas, available operations, etc.
+**Description**: $metadata is an endpoint in OData services that contains a machine-readable description of the service model including type schemas, available operations, etc.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/$metadata
@@ -10,7 +10,7 @@ GET http://services.odata.org/V4/TripPinService/$metadata
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```xml
 200 OK

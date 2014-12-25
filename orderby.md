@@ -1,6 +1,6 @@
 **Categories**: Other system query options
 
-**Description**: You can use the \$orderby system query option to specify ordering criteria. You can use many of the functions usable in $filter in $orderby as well.
+**Description**: You can use the $orderby system query option to specify ordering criteria. You can use many of the functions usable in $filter in $orderby as well.
 
 **Request**
 

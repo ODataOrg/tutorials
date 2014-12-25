@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-You can filter any type of collection in OData services. When referring to a member of enum properties, please don't ignore the namespace for the enum property.
+**Description**: You can filter any type of collection in OData services. When referring to a member of enum properties, please don't ignore the namespace for the enum property.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People?$filter=Gender eq Microsoft.OData.SampleService.Models.TripPin.PersonGender'Female'
@@ -11,7 +11,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

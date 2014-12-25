@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-You can use any/all lambda-style filters for collection properties.
+**Description**: You can use any/all lambda-style filters for collection properties.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/People?$filter=Emails/any(e: endswith(e, 'contoso.com'))
@@ -11,7 +11,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK

@@ -1,8 +1,8 @@
-Categories: Filtering collections
+**Categories**: Filtering collections
 
-You can use any related properties in a filter clause by using the same segments used in the path to traverse properties.
+**Description**: You can use any related properties in a filter clause by using the same segments used in the path to traverse properties.
 
-Request
+**Request**
 
 ```
 GET http://services.odata.org/V4/TripPinService/Airports?$filter=Location/City/Region eq 'California'
@@ -11,7 +11,7 @@ Accept: application/json
 OData-MaxVersion: 4.0
 ```
 
-Response
+**Response**
 
 ```js
 200 OK
