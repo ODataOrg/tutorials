@@ -1,4 +1,7 @@
-**Categories**: Filtering collections
+---
+name: Filtering primitive collections
+categories: Filtering Collections
+---
 
 **Description**: You can filter any type of collection in OData services. When referring to a member of the collection, you can use $it as reference to the member itself.
 

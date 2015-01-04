@@ -1,4 +1,7 @@
-**Categories**: Filtering collections
+---
+name: Logic operators
+categories: Filtering Collections
+---
 
 **Description**: You can use and, or and not to create more complex filter clauses.
 

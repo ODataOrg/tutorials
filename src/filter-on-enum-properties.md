@@ -1,4 +1,7 @@
-**Categories**: Filtering collections
+---
+name: Filter on enum properties
+categories: Filtering Collections
+---
 
 **Description**: You can filter any type of collection in OData services. When referring to a member of enum properties, please don't ignore the namespace for the enum property.
 

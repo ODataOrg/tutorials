@@ -1,5 +1,7 @@
-
-**Categories**: Filtering collections
+---
+name: Built-in functions
+categories: Filtering Collections
+---
 
 **Description**: Another way of filtering items is to use a type cast segment. In this case we are looking for all of the flights that are part of Russell's trip. A type cast also allows us to append additional path segments that are properties of the subtype.
 

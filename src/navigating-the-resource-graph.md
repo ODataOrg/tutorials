@@ -1,4 +1,7 @@
-**Categories**: Basic Requests
+---
+name: Navigating the resource graph
+categories: Basic Requests
+---
 
 **Description**: To navigate the resource graph, keep appending segments representing valid property names as defined in $metadata or in a full metadata response (see query x). In this case we have started from the service root, navigated to the entity set People, navigated to the resource keyed 'russellwhyte', navigated to the Friends property, navigated to the resource keyed 'scottketchum', and finally navigated to the AddressInfo property. Note that the @odata.context URL self-describes the payload.
 

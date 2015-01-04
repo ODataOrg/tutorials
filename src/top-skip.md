@@ -1,4 +1,7 @@
-**Categories**: Other system query options
+---
+name: Top / Skip
+categories: Other System Query Options
+---
 
 **Description**: There are two types of paging in OData services. Servers can enable server-side paging, returning nextLinks that clients can follow to subsequent pages. Clients can drive paging using $top and $skip.
 

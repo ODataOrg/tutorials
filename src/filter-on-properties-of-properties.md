@@ -1,4 +1,7 @@
-**Categories**: Filtering collections
+---
+name: Filter on properties of properties
+categories: Filtering Collections
+---
 
 **Description**: You can use any related properties in a filter clause by using the same segments used in the path to traverse properties.
 

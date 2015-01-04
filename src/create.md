@@ -1,4 +1,7 @@
-**Categories**: C(r)UD
+---
+name: Create
+categories: C(r)UD
+---
 
 **Description**: To create a resource, send a POST to a collection.
 

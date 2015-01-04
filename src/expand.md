@@ -1,4 +1,7 @@
-**Categories**: Other system query options
+---
+name: Expand
+categories: Other System Query Options
+---
 
 **Description**: You can use the $expand system query option to include related resources. The expand clause can include many of the other system query options, enabling left-join type semantics. Also, you can expand \<property\>/$ref in order to get just the links to the related resources.
 

@@ -1,4 +1,7 @@
-**Categories**: Operations
+---
+name: Bound actions
+categories: Operations
+---
 
 **Description**: OData support bound custom actions. Actions can have side effects. So the HTTP verb for an OData action can be GET,POST,PUT,DELETE according to the behavior of the action. In the example below, the action implies a POST.
 

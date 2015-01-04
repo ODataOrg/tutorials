@@ -1,4 +1,7 @@
-**Categories**: Basic Requests
+---
+name: Get a single entity from a collection
+categories: Basic Requests
+---
 
 **Description**: To get a particular entity from a collection, append a key segment. By default, key segments in OData services are bounded by parens because they may be composite keys, e.g., OrderLine(OrderId=1,LineNumber=1) or alternate keys, e.g., Person(SSN='000-00-0000') and Person(2115) both address the same resource. Some OData services use normal URL segments for key segments, e.g., Orders/1. This is not recommended because of the scenarios mentioned above.
 

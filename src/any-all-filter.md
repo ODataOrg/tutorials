@@ -1,15 +1,17 @@
-**Categories**: Basic Requests
+---
+name: Any/All filter
+categories: Filtering Collections
+---
 
-**Description**: One of the most common responses from a REST API is a collection of resources. In this case we asked for the People collection. For each response, the OData service writes a self-described response (another REST principle) by annotating the response with a context URL. This context URL tells the service that the contents of the response are a collection of things in the People entity set. The @odata.nextLink annotation is present because the server opted to split the result set across multiple pages. The client can also drive paging using $top and $skip, but server-side paging is a mitigation against DoS attacks. The value property contains the bulk of the response. Note that @odata.id and @odata.editLink should generally not be present in the payload unless they deviate from convention. In this case it appears that there is a bug in our sample service. Pretend those properties aren't there.
+**Description**: You can use any/all lambda-style filters for collection properties.
 
 **Request**
 
 ```
-GET http://services.odata.org/V4/TripPinService/People
+GET http://services.odata.org/V4/TripPinService/People?$filter=Emails/any(e: endswith(e, 'contoso.com'))
 
 Accept: application/json
 OData-MaxVersion: 4.0
-
 ```
 
 **Response**
@@ -19,11 +21,11 @@ OData-MaxVersion: 4.0
 
 {
     "@odata.context": "http://services.odata.org/V4/TripPinService/$metadata#People",
-    "@odata.nextLink": "http://services.odata.org/V4/TripPinService/People?%24skiptoken=8",
+    "@odata.nextLink": "http://services.odata.org/V4/TripPinService/People?%24filter=Emails%2fany(e%3a+endswith(e%2c+%27contoso.com%27))&%24skiptoken=8",
     "value": [
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('russellwhyte')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('russellwhyte')",
             "UserName": "russellwhyte",
             "FirstName": "Russell",
@@ -43,34 +45,11 @@ OData-MaxVersion: 4.0
                 }
             ],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
-        },
-        {
-            "@odata.id": "http://services.odata.org/V4/TripPinService/People('scottketchum')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
-            "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('scottketchum')",
-            "UserName": "scottketchum",
-            "FirstName": "Scott",
-            "LastName": "Ketchum",
-            "Emails": [
-                "Scott@example.com"
-            ],
-            "AddressInfo": [
-                {
-                    "Address": "2817 Milton Dr.",
-                    "City": {
-                        "CountryRegion": "United States",
-                        "Name": "Albuquerque",
-                        "Region": "NM"
-                    }
-                }
-            ],
-            "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
         },
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('ronaldmundy')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('ronaldmundy')",
             "UserName": "ronaldmundy",
             "FirstName": "Ronald",
@@ -81,11 +60,11 @@ OData-MaxVersion: 4.0
             ],
             "AddressInfo": [],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
         },
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('javieralfred')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('javieralfred')",
             "UserName": "javieralfred",
             "FirstName": "Javier",
@@ -105,11 +84,11 @@ OData-MaxVersion: 4.0
                 }
             ],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
         },
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('willieashmore')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('willieashmore')",
             "UserName": "willieashmore",
             "FirstName": "Willie",
@@ -120,11 +99,11 @@ OData-MaxVersion: 4.0
             ],
             "AddressInfo": [],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
         },
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('vincentcalabrese')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('vincentcalabrese')",
             "UserName": "vincentcalabrese",
             "FirstName": "Vincent",
@@ -144,25 +123,11 @@ OData-MaxVersion: 4.0
                 }
             ],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
-        },
-        {
-            "@odata.id": "http://services.odata.org/V4/TripPinService/People('clydeguess')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
-            "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('clydeguess')",
-            "UserName": "clydeguess",
-            "FirstName": "Clyde",
-            "LastName": "Guess",
-            "Emails": [
-                "Clyde@example.com"
-            ],
-            "AddressInfo": [],
-            "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
         },
         {
             "@odata.id": "http://services.odata.org/V4/TripPinService/People('keithpinckney')",
-            "@odata.etag": "W/\"08D1E948E6410AFC\"",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
             "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('keithpinckney')",
             "UserName": "keithpinckney",
             "FirstName": "Keith",
@@ -173,7 +138,37 @@ OData-MaxVersion: 4.0
             ],
             "AddressInfo": [],
             "Gender": "Male",
-            "Concurrency": 635545521745890000
+            "Concurrency": 635545679851504300
+        },
+        {
+            "@odata.id": "http://services.odata.org/V4/TripPinService/People('marshallgaray')",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
+            "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('marshallgaray')",
+            "UserName": "marshallgaray",
+            "FirstName": "Marshall",
+            "LastName": "Garay",
+            "Emails": [
+                "Marshall@example.com",
+                "Marshall@contoso.com"
+            ],
+            "AddressInfo": [],
+            "Gender": "Male",
+            "Concurrency": 635545679851504300
+        },
+        {
+            "@odata.id": "http://services.odata.org/V4/TripPinService/People('ryantheriault')",
+            "@odata.etag": "W/\"08D1E96DB61542A3\"",
+            "@odata.editLink": "http://services.odata.org/V4/TripPinService/People('ryantheriault')",
+            "UserName": "ryantheriault",
+            "FirstName": "Ryan",
+            "LastName": "Theriault",
+            "Emails": [
+                "Ryan@example.com",
+                "Ryan@contoso.com"
+            ],
+            "AddressInfo": [],
+            "Gender": "Male",
+            "Concurrency": 635545679851504300
         }
     ]
 }

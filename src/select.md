@@ -1,4 +1,7 @@
-**Categories**: Other system query options
+---
+name: Select
+categories: Other System Query Options
+---
 
 **Description**: You can use the \$select system query option to only return specified properties.
 

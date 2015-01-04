@@ -1,4 +1,7 @@
-**Categories**: Basic Requests
+---
+name: Read the service metadata
+categories: Basic Requests
+---
 
 **Description**: $metadata is an endpoint in OData services that contains a machine-readable description of the service model including type schemas, available operations, etc.
 

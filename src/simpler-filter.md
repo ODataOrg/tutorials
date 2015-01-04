@@ -1,4 +1,7 @@
-**Categories**: Filtering collections
+---
+name: Simple filter
+categories: Filtering Collections
+---
 
 **Description**: The $filter system query option can be used to filter any collection of resources. Note that the response to a filtered collection is a collection of the same type, regardless of the number of matched resources.
 

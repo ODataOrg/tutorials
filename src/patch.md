@@ -1,4 +1,7 @@
-**Categories**: C(r)UD
+---
+name: Patch
+categories: C(r)UD
+---
 
 **Description**: To update a resource, send a PATCH request with the properties you wish to modify. You can also use PUT, but the semantics for put require all properties to be either sent on the wire or reverted to their default values. Note: since the People entity set has concurrency enabled, you will need to request the resource and set the If-Match header to the appropriate value to run this request.
 

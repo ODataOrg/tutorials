@@ -1,4 +1,7 @@
-**Categories**: Basic Requests
+---
+name: Get the raw value of a primitive property
+categories: Basic Requests
+---
 
 **Description**: If you really want the raw value of a primitive property, you can get it by appending $value to the URL. Note that the Content-Type header indicates that the content is text/plain.
 

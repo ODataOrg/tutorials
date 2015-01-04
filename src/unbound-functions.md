@@ -1,4 +1,7 @@
-**Categories**: Operations
+---
+name: Unbound functions
+categories: Operations
+---
 
 **Description**: OData support unbound custom functions. The unbound functions can be invoked either with parameters or not and unbound functions can be viewed in the $metadata. Note: OData functions CANNOT have side effect, so only GET verb is allowed.
 

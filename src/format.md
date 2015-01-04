@@ -1,4 +1,7 @@
-**Categories**: Other system query options
+---
+name: Format
+categories: Other System Query Options
+---
 
 **Description**: By default OData services return an extremely compact JSON format. This happens by stripping out all of the metadata that should be calculable by "smart" OData clients. For generic hypermedia clients, you can request additional metadata by using the Accept header or $format system query option to request application/json;odata.metadata=full. In this case, we get a bunch of additional annotations in the payload indicating type information and relationships to related resources.
 
