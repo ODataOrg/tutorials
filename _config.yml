@@ -7,6 +7,8 @@ baseurl: "/tutorials" # the subpath of your site, e.g. /blog/
 url: "http://odataorg.github.io" # the base hostname & protocol for your site
 github_username:  ODataOrg
 
+permalink: /:title/
+
 # Build settings
 defaults:
   -

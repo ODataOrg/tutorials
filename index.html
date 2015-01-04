@@ -11,7 +11,7 @@ layout: page
     
       {% for pc in tutorial.categories %}
         {% if pc == cat %}
-        <li><a href="{{ tutorial.url }}">{{ tutorial.name }}</a></li>
+        <li><a href="{{ site.baseurl }}{{tutorial.url }}">{{ tutorial.name }}</a></li>
         {% endif %}  
       {% endfor %}  
     
