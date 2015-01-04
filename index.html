@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<p>This page is generated using Jekyll based on the <a href="https://github.com/ODataOrg/tutorials">OData Tutorial Guidelines on GitHub</a>. We list the scenarios/features supported by OData V4 and group them in different categories. You can add new ones on <a href="https://github.com/ODataOrg/tutorials">GitHub</a> and we will update this site regularly.</p>
+
+  {% for cat in site.category-list %}
+  <h3> {{ cat }} </h3>
+  <ul>
+    {% for tutorial in site.tutorials %}
+    
+      {% for pc in tutorial.categories %}
+        {% if pc == cat %}
+        <li><a href="{{ tutorial.url }}">{{ tutorial.name }}</a></li>
+        {% endif %}  
+      {% endfor %}  
+    
+    {% endfor %} 
+  </ul>
+  
+  {% endfor %} 

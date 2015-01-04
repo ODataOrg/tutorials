@@ -1,0 +1,26 @@
+# Site settings
+title: OData Tutorial Guildlines
+email: t-qial@microsoft.com
+description: > # this means to ignore newlines until "baseurl:"
+  This site show all the OData tutorials covered in https://github.com/ODataOrg/tutorials. This guideline will help you to build / use OData libraries better.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.odata.org" # the base hostname & protocol for your site
+github_username:  ODataOrg
+
+# Build settings
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+      type: tutorials
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+highlighter: rouges
+collections:
+  tutorials:
+    output: true
+
+category-list: [Basic Requests, Filtering Collections, Other System Query Options, C(r)UD, Operations]
