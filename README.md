@@ -15,6 +15,8 @@ For those who use OData libraries : you can play with the tools you'd like to ch
  - If you are working on creating your own OData libraries, use these as guidelines to create test cases, samples and blogs. You can link your test cases / sample scenarios / code comments with the .md files directly.
  - If you are using an OData library, with this, you can easily try and tell what futures are supported and what are not (in case the library itself didn't show clearly.)
 
+***Considering that one request per .md file is not easy for users to read thrrough, we use jekyll to generate a [OData Tutorial Guidelines](http://odataorg.github.io/tutorials/) web site from the content in this repository.***
+
 ##Structure of this repo
 
 For each OData request, we create one .md file in the **src** folder in this repository. The .md file is named with the name of the request and hyphen to separate each word, like "read-the-service-root.md" and the name for each .md file will be treated as the identifier of each request in the guideline.
