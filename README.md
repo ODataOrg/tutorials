@@ -19,7 +19,7 @@ For those who use OData libraries : you can play with the tools you'd like to ch
 
 ##Structure of this repo
 
-For each OData request, we create one .md file in the **src** folder in this repository. The .md file is named with the name of the request and hyphen to separate each word, like "read-the-service-root.md" and the name for each .md file will be treated as the identifier of each request in the guideline.
+For each OData request, we create one .md file in the [src](https://github.com/ODataOrg/tutorials/tree/master/src) folder in this repository. The .md file is named with the name of the request and hyphen to separate each word, like "read-the-service-root.md" and the name for each .md file will be treated as the identifier of each request in the guideline.
 
 ###Template
 
