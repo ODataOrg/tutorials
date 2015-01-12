@@ -1,5 +1,5 @@
 # Site settings
-title: OData Tutorial Guildlines
+title: OData Tutorial Guidelines
 email: t-qial@microsoft.com
 description: > # this means to ignore newlines until "baseurl:"
   This site show all the OData tutorials covered in https://github.com/ODataOrg/tutorials. This guideline will help you to build / use OData libraries better.
